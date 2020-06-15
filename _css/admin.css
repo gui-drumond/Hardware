@@ -1,0 +1,81 @@
+body{
+	font: 400 14px Roboto, sans-serif;
+	background-color:#EEE;
+	background-size: 12%;
+	-webkit-font-smoothing: antialiased;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    text-align: justify;
+    font-size: 18px;
+  }
+.forme{
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+}
+
+.logon-container {
+	width: 100%;
+	max-width: 1120px;
+	height: 100vh;
+	margin: 0 auto;
+	margin-bottom: 120px;
+    align-items: center;
+    justify-content: space-between;
+}
+.forme{
+    font-size: 37px;
+}
+.logon-container section.form {
+	width: 95%;
+	max-width: 3500px;
+	margin: 30px;
+	background-color: #eeeeee;
+	color: #333;
+	border-radius:  8px;
+	padding: 100px;
+	border: 1px solid #ccc;
+	border-radius: 25px;
+}
+.logon-container section.forme form {
+	margin-top: 5px;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+input, button, textarea{
+	font: 400 18px Roboto, sans-serif;
+	margin: 15px;
+}
+button{
+	cursor: pointer;
+}
+form input{
+	background-color: #f5f0f5;
+	width: 60%;
+	height:40px;
+	color: #333;
+	border-radius: solid #000 8px;
+	padding: 0 24px;
+}
+a {
+    text-decoration: none;
+    color:#000;
+}
+a:hover{
+	opacity: .8;
+	pointer-events: auto;
+    text-decoration: none;
+    color:#000;
+}
+h1{
+	margin-left: 2%;
+}
+form .inputage{
+	width: 30%;
+}
+.category{
+    width: 25%;
+}
+.inputs{
+    display: grid;
+}

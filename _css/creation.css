@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+.grid{/* parte do grid que controla o meio do site  */
+	display: grid;
+	grid-auto-columns: 1fr;
+	max-width: 100%;
+	flex-wrap: wrap;
+	grid-gap: 10px;
+	grid-template-areas: 'space centro space';
+}
+
+
+body{
+	font: 400 14px Roboto, sans-serif;
+	background-size: 12%;
+	-webkit-font-smoothing: antialiased;
+	width: 100%;
+	height: 100vh;
+}
+nav ul{ /* menu de navegacao   */
+margin: 0px;
+}
+.menu ul li a{ /* items do menu dentro do nav*/ 
+	padding: 20px 30px;
+	transition:  .2s linear;
+}
+.menu ul li a:active,.menu ul li a:hover{
+	/*items dentro do nav sendo ativados*/
+	display: block;
+	text-decoration: none;
+	background-color: #c6d4e1;
+}
+.menu ul li a i:active,.menu ul li a i:hover{
+	/* icones dentro dos items do menu sendo ativados */
+	text-decoration: none;
+	background-color: #c6d4e1;
+}
+.menu {/* parte do icones de cima */
+	background-color: #fff;
+	position: relative;
+}
+.pagination li a{ /* parte do icones de cima */
+	text-decoration: none;
+	color:black;
+	}
+.container{/* A section que some para fakeloading*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.fotos,.fotos2{/* As imagens */
+	width: 50px;
+	height: 50px;
+} 
+.heroes{ /* A section que envolve a imagem de backgroud  */
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	background-color:#1f1f3d;
+	background-repeat: no-repeat;
+	background-image: url('../_imagens/heroes.png');
+	background-size: auto;
+	background-position: center;
+	animation: heroes 1.5s ease-in;
+	display: flex;
+	flex-direction: column;
+}
+.conteudo{ /* a div que envolve todos os menus laterais */
+	width: 100%;
+	height: 70vh;
+	margin-top: 0;
+	flex-wrap: wrap;
+}
+.combobox{
+	display: grid;
+	justify-items: center;
+	align-self: center;
+}
+.producao{/* A div da menu computador  e a   A div do menu producao*/
+	margin: 0;
+	width: auto;
+	padding: 2%;
+	margin-top: 30px;
+	max-width: 100%;
+	justify-self: center;
+	justify-items: center;
+	align-self: center;
+	transition: 0.8s;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+	background-color: #eee;
+	border: solid 1px #ccc;
+}
+
+.producao:hover{ /* A div da menu lista  */
+	transition: 1.2s;
+	padding:3%;	
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+.pc{/* A imagem dentro da div computador  */
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	width: 64Px;
+	border-bottom: 1px solid white;
+}
+.flex{ /* A class que envolve o section para fazer a igualdade das colunas e icons */
+	display: flex;
+}
+.most{
+		/* div grid que eh a marcacao dos quadrados*/
+	display: grid; 
+	grid-column-gap: 10px;
+	max-width: 100%;
+	grid-gap: 10px;
+	flex-wrap: wrap;
+}
+.box-1,.box-2,.box-3{
+	/* itens do grid que sao os quadrados coloridos*/
+	grid-column-gap: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-self: center;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+    border-bottom: .5em solid hsla(0,0%,4%,.2);
+    text-align: center;
+    color: #fafafa;
+	transition: transform 86ms ease-out;
+	text-transform: uppercase;
+	width: 450px;
+	height: 100%;
+}
+.box-1{
+	grid-column: 1;
+	background-color:#0fbf4d;
+}
+.box-2{
+	grid-column:2;
+	background-color: #e0404e;
+}
+.box-3{
+	grid-column: 3;
+	background-color:#3273dc;
+}
+.quadros{
+	background-color: (235, 231, 224);
+}
+.fotos2{
+	margin-top: 10px;
+}
+@keyframes heroes {  /* animacao que faz aparecer lentamente apos a div de fakeloading  */
+    0% { opacity: 0%;}
+    25% { opacity: 24%;}
+    70% { opacity: 75%;}
+    100% { opacity: 80%;}
+  }

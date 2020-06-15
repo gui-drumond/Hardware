@@ -101,7 +101,6 @@ margin: 0px;
 }
 .menu {/* parte do icones de cima */
 	background-color: #fff;
-	position: relative;
 }
 .pagination li a{ /* parte do icones de cima */
 	text-decoration: none;

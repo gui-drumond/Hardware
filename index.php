@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css"  href="_css/style.css"/>
     <link rel="stylesheet" type="text/css" href="_css/fakeloading.css"/>
-    <link rel="stylesheet" type="text/css"  href="_css/responsive_index.css"/>           
-    <link rel="stylesheet" type="text/css"  href="_css/global.css"/>
+    <link rel="stylesheet" type="text/css"  href="_css/global.css"/> 
+    <link rel="stylesheet" type="text/css"  href="_css/responsive_index.css"/>   
     <link rel="stylesheet" type="text/css"  href="_css/bootstrap.min.css"/>                                           
     <title>Meu TCC</title>
 </head>
@@ -66,16 +66,16 @@
             <section class="most img-fluid">
                             <div class="box-1 img-fluid">
                                     <div class="icons"><img class="img-fluid fotos2" src="_imagens/money.png"/></div>
-                                    <h1>1. Defina seu Orçamento</h1>
+                                    <h1 class="texto">1. Defina seu Orçamento</h1>
                             </div>
                             <div class="box-2 img-fluid">
                                     <div class="icons"><img class="img-fluid fotos2" src="_imagens/compatible.png"/></div>
-                                    <h1>2. Nós testamos a Compatibilidade</h1>
+                                    <h1 class ="texto">2. Nós testamos a Compatibilidade</h1>
                             </div>
 
                             <div class="box-3 img-fluid">
                                     <div class="icons"><img class="img-fluid fotos2" src="_imagens/checklist.png"/></div>
-                                    <h1>3. Nós te mostramos as Peças</h1>
+                                    <h1 class ="texto">3. Nós te mostramos as Peças</h1>
                             </div>
             </section>
         <section id="explication">

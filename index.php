@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,7 +14,7 @@
     <link rel="stylesheet" type="text/css"  href="_css/global.css"/> 
     <link rel="stylesheet" type="text/css"  href="_css/responsive_index.css"/>   
     <link rel="stylesheet" type="text/css"  href="_css/bootstrap.min.css"/>                                           
-    <title>Meu TCC</title>
+    <title>Meu TCC </title>
 </head>
     <body>
         <header>
@@ -20,7 +23,7 @@
                     <li class="home page-item"><a href="#home"class="page-link"><i class="fas fa-home" aria-hidden="true"></i></a></li>
                     <li class="page-item "><a target="_blank" href="https://www.instagram.com/drumond_guilherme/" class="page-link"> <i class="fab fa-instagram" aria-hidden="true"></i></a></li>
                     <li class="page-item"><a target="_blank" href="https://github.com/Skillado"class="page-link"> <i class="fab fa-github-square" aria-hidden="true"></i></a></li>
-                    <li class="page-item"><a target="_self" href="controllers/creation.php"class="page-link"> <i class="fas fa-sign-in-alt"></i></i></a></li>
+                    <li class="page-item"><a target="_self" href="controllers/login.php"class="page-link"> <i class="fas fa-sign-in-alt"></i></i></a></li>
                 </ul>
             </nav>
         </header>
@@ -41,7 +44,7 @@
                             <p class="sub">Apenas diga seu nome e sua idade e pronto use e abuse!</p>
                             <p class="jargao">Menos é <span class="mark">MAIS</span></p>
                                 </nav>
-                            <a href="controllers/login.php"><input  class="button" value="Pronto" type="submit" required="required"/></a>
+                            <a href="controllers/creation.php"><input  class="button" value="Pronto" type="submit" required="required"/></a>
                            
                         </div>
                         <div classs=""></div>

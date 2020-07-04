@@ -17,6 +17,7 @@
 	height: 80vh;
 	flex-wrap: wrap;
 	justify-content: center;
+	box-shadow:  2px 4px 8px rgba(0, 0, 0, 0.39);
 }
 .area_texto {
 	width: 100%;
@@ -152,6 +153,7 @@ margin: 0px;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
 	background-color: #eee;
 	border: solid 1px #ccc;
+	border-radius: 20px;
 }
 .computador{ /* A div da menu computador  */
 	padding: 25px;
@@ -249,7 +251,7 @@ margin: 0px;
 	text-align: center;
 	font-size: 18px;
 	line-height:10%;
-	opacity: 45%;
+	opacity: 75%;
 }
 .button:hover{
 	/* botao que fica nas duas divs do header, altera somente o botao*/
@@ -268,18 +270,23 @@ transition:  1.2s;
 }
 .computador .button {
 	background-color: #7159c1;
+	box-shadow:0 5px 0 #700CDB;
 	text-align: center;
 	margin: 15px;
+	text-decoration: none;
 }
 .producao .button {
 	/* botao do div da direita com a lista, altera somente o botao*/
 	background-color: #7159c1;
 	text-align: center;
 	margin-bottom: 15px;
+	text-decoration: none;
+	box-shadow:0 5px 0 #700CDB;
 }
 .botao{
 	justify-self: center;
 	justify-items: center;
+	text-decoration: none;
 }
 .title2{	/* titulo do "Entenda como funciona"*/
 	border-left: 5px solid #e02041;

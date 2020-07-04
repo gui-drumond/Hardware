@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+*{
+    font-weight: 500;
+    margin:0;
+    padding: 0;
+}
+.fundao{
+    max-width: 100%;
+    width: 100%;   /* ViewPort Width = (traducao) largura do dispositivo */
+    height: 100% ; /* ViewPort Height = (traducao) Altura do dispositivo */
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: linear-gradient(to bottom,#1f1f3d,#1b1b29);
+}
+
+.parte1{  
+      /* div dos menus  */
+    width: 50%;
+    height: 100vh;
+    align-items: center;
+    justify-self: center;
+    box-shadow: 4px 16px 36px  rgba(0,0,0,0.3);
+}
+
+.Hardware{
+    /* div caixa das linhas  */
+    margin-top: 15.7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height:50%;
+    background-color: #1f1f3d;
+}
+
+.menu_description{
+    width:100%;
+    height: 10vh;
+
+    
+}
+
+.menu-interaction{ 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15%;
+    margin-top: 2%;
+    background-color: #eee;
+    border: 2px #eee;
+    box-shadow: 4px 16px 36px  rgba(0, 0, 0, 0.425);
+      border-radius: 8px;
+}
+
+.linha{
+    /* as linhas que contem os icones */
+    width: 100%;
+    height: 20%;
+    margin-top: 2%;
+    background-color: #eee;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #1f1f3d;
+    transition: 1s ease;
+    box-shadow: 4px 16px 36px  rgba(0,0,0,0.3);
+    
+}
+
+.fotos{
+    /* as imagens pngs */
+    width: 90%;
+    height: 90%;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.icone{
+    /* div que envolve as fotos */
+    width: 10%;
+    height: 100%;
+    background-color: rgb(60, 57, 102);
+    margin :0;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 80%;
+    justify-content: center;
+    align-content: center;
+    border-bottom: 4px solid  #3c3966;
+
+}
+
+.titulo h1 {
+       font-size: 18px;
+       text-align: justify;
+       margin-top: 10px;
+}
+
+.botoes{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end ;
+    align-items: flex-end;
+ }
+
+.botao{  
+    width: 12%;
+    height: 60%;
+    margin-right:2% ;
+    text-align: center;
+    border-radius: 8px;
+    color: #eee;
+    background-color: rgb(125, 101, 230); 
+    box-shadow: 3px 5px rgb(70, 50, 156); 
+    transition: .8s ease-in-out;
+}
+
+.botao2{
+    margin-right:2% ;
+    width: 12%;
+    height: 60% ;
+    border-radius: 8px;
+    text-align: center;
+    color: #eee;
+    background-color: rgb(125, 101, 230); 
+    box-shadow: 3px 5px rgb(70, 50, 156); 
+    transition: .8s ease-in-out;
+}
+
+.texto1{
+    justify-content: start;
+    justify-content: flex-start;
+    align-self: flex-start;
+    color:rgb(125, 101, 230)
+}
+
+.texto{
+    align-self: center;
+    margin-left: 2%;
+    color:rgb(125, 101, 230);
+}
+
+ h1{ 
+    font-family:Roboto, sans-serif;
+    text-transform: uppercase;
+    transition: .2s ease-in-out;
+}
+
+
+/* HOVERS */
+h1:hover{ 
+    transition: 1s ease-in-out;
+}
+.linha:hover {
+    background-color: rgb(219, 219, 250);
+    border: solid 2px rgb(125, 101, 230);
+    transition: .6s ease-in-out;
+    box-shadow: 4px 2px 6px  rgba(249, 85, 255, 0.445);
+}
+
+.texto:hover{
+    color:rgb(87, 64, 190);
+}
+
+.botoes a, .botoes a:hover {
+    text-decoration: none;
+}
+
+.botao:hover{
+    transition: .2s ease-in-out;
+    text-align: center;
+    background-color: rgb(106, 77, 238);
+    color: #eee;
+}
+
+.botao2:hover{
+    transition: .2s ease-in-out;
+    background-color: rgb(106, 77, 238); 
+    color: #eee;
+}
+
+/* ACTIVES */
+.botao:active{
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+
+.botao2:active{
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}

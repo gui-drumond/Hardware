@@ -5,16 +5,6 @@
 	outline: 0;
 	box-sizing: border-box;
 }
-.grid{/* parte do grid que controla o meio do site  */
-	display: grid;
-	grid-auto-columns: 1fr;
-	max-width: 100%;
-	flex-wrap: wrap;
-	grid-gap: 10px;
-	grid-template-areas: 'space centro space';
-}
-
-
 body{
 	font: 400 14px Roboto, sans-serif;
 	background-size: 12%;
@@ -22,12 +12,23 @@ body{
 	width: 100%;
 	height: 100vh;
 }
+.grid1{/* parte do grid que controla o meio do site  */
+	display: flex;
+	flex-direction: row;
+	grid-template-rows: 1fr;
+	max-width: 100%;
+	flex-wrap: wrap;
+	grid-gap: 10px;
+	justify-content: center;
+}
 nav ul{ /* menu de navegacao   */
-margin: 0px;
+	margin: 0px;
+	margin-bottom: 1px;
 }
 .menu ul li a{ /* items do menu dentro do nav*/ 
 	padding: 20px 30px;
 	transition:  .2s linear;
+	
 }
 .menu ul li a:active,.menu ul li a:hover{
 	/*items dentro do nav sendo ativados*/
@@ -43,6 +44,7 @@ margin: 0px;
 .menu {/* parte do icones de cima */
 	background-color: #fff;
 	position: relative;
+	box-shadow: 0 2px 4px 8px rgba(104, 103, 103, 0.39);
 }
 .pagination li a{ /* parte do icones de cima */
 	text-decoration: none;
@@ -60,8 +62,8 @@ margin: 0px;
 .heroes{ /* A section que envolve a imagem de backgroud  */
 	margin: 0;
 	width: 100%;
-	height: 100vh;
-	background-color:#1f1f3d;
+	height: 90vh;
+	background-color:#731fac;
 	background-repeat: no-repeat;
 	background-image: url('../_imagens/heroes.png');
 	background-size: auto;
@@ -69,22 +71,20 @@ margin: 0px;
 	animation: heroes 1.5s ease-in;
 	display: flex;
 	flex-direction: column;
+	box-shadow: 0 2px 4px 8px rgba(0, 0, 0, 0.39);
+	border-radius: 0px 0px 85% 85%;
 }
 .conteudo{ /* a div que envolve todos os menus laterais */
 	width: 100%;
-	height: 70vh;
-	margin-top: 0;
-	flex-wrap: wrap;
+	height: 70vh; 
 }
-.combobox{
-	display: grid;
-	justify-items: center;
-	align-self: center;
-}
+
 .producao{/* A div da menu computador  e a   A div do menu producao*/
 	margin: 0;
 	width: auto;
 	padding: 2%;
+	margin-left: 2%;
+	margin-right: 2%;
 	margin-top: 30px;
 	max-width: 100%;
 	justify-self: center;
@@ -95,10 +95,44 @@ margin: 0px;
 	background-color: #eee;
 	border: solid 1px #ccc;
 }
-
+.hidden{	
+	display: none;
+}
+.btn{
+	font-family: Arial;
+	font-size: 12px;
+	text-transform: uppercase; /*sempre letras maiusculas*/
+	font-weight: 700;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+}
+.btn-roxo{
+	background: #8613DB;
+	color:#FFF;
+	box-shadow:0 5px 0 #700CDB;
+	transition: 0.6s ease-in;
+}
+.btn-roxo:hover{
+	background: #700CDB;
+	color:#FFF;
+	box-shadow:0 5px 0 #5700DB;
+}
+.btn-roxo:active{
+	box-shadow:none;
+	position: relative;
+	top: 5px;
+	transition: 0.2s ease-in;
+}
+.campo1{
+	display: block;
+	width: 50vw;
+	height: 100vh;
+	margin-bottom: 4%;
+}
 .producao:hover{ /* A div da menu lista  */
 	transition: 1.2s;
-	padding:3%;	
+	padding: 2%;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
 }
 .pc{/* A imagem dentro da div computador  */
@@ -110,47 +144,27 @@ margin: 0px;
 }
 .flex{ /* A class que envolve o section para fazer a igualdade das colunas e icons */
 	display: flex;
+	flex-direction: column;
+	background-image: linear-gradient(to bottom,#731fac,#6d397c);
+	box-shadow: 16px 12px 14px 16px rgba(0,0,0,0.3);
+	border-radius:3px;
+
 }
-.most{
-		/* div grid que eh a marcacao dos quadrados*/
-	display: grid; 
-	grid-column-gap: 10px;
-	max-width: 100%;
-	grid-gap: 10px;
-	flex-wrap: wrap;
+.meio{
+	margin-bottom: 2%;
+	margin-top: 2%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	border-radius:13px;
+	box-shadow: 16px 12px 14px  rgba(0, 0, 0, 0.568);
+	background-color: #dedede;
 }
-.box-1,.box-2,.box-3{
-	/* itens do grid que sao os quadrados coloridos*/
-	grid-column-gap: 10px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-self: center;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
-    border-bottom: .5em solid hsla(0,0%,4%,.2);
-    text-align: center;
-    color: #fafafa;
-	transition: transform 86ms ease-out;
-	text-transform: uppercase;
-	width: 450px;
-	height: 100%;
+.card{
+	transition: .4s;
 }
-.box-1{
-	grid-column: 1;
-	background-color:#0fbf4d;
-}
-.box-2{
-	grid-column:2;
-	background-color: #e0404e;
-}
-.box-3{
-	grid-column: 3;
-	background-color:#3273dc;
-}
-.quadros{
-	background-color: (235, 231, 224);
-}
-.fotos2{
-	margin-top: 10px;
+.card:hover{
+	transition: .8s ease-in-out;
+box-shadow: 7px 7px 7px 10px rgba(0, 0, 0, 0.26);
 }
 @keyframes heroes {  /* animacao que faz aparecer lentamente apos a div de fakeloading  */
     0% { opacity: 0%;}

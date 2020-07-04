@@ -1,0 +1,18 @@
+#btnTop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    color: black;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    cursor: pointer;
+    display: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}

@@ -12,6 +12,7 @@ session_start();
     <link rel="stylesheet" type="text/css"  href="_css/style.css"/>
     <link rel="stylesheet" type="text/css" href="_css/fakeloading.css"/>
     <link rel="stylesheet" type="text/css"  href="_css/global.css"/> 
+    <link rel="stylesheet" type="text/css"  href="_css/topo.css"/> 
     <link rel="stylesheet" type="text/css"  href="_css/responsive_index.css"/>   
     <link rel="stylesheet" type="text/css"  href="_css/bootstrap.min.css"/>                                           
     <title>Meu TCC </title>
@@ -21,14 +22,14 @@ session_start();
             <nav class="menu">
                 <ul class="pagination justify-content-center">
                     <li class="home page-item"><a href="#home"class="page-link"><i class="fas fa-home" aria-hidden="true"></i></a></li>
-                    <li class="page-item "><a target="_blank" href="https://www.instagram.com/drumond_guilherme/" class="page-link"> <i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li class="page-item "><a target="_blank" href="https://www.instagram.com/hardware_assembly/" class="page-link"> <i class="fab fa-instagram" aria-hidden="true"></i></a></li>
                     <li class="page-item"><a target="_blank" href="https://github.com/Skillado"class="page-link"> <i class="fab fa-github-square" aria-hidden="true"></i></a></li>
                     <li class="page-item"><a target="_self" href="controllers/login.php"class="page-link"> <i class="fas fa-sign-in-alt"></i></i></a></li>
                 </ul>
             </nav>
         </header>
         <section class="fundo"id="content">   
-        <div class="loader-wrapper">
+            <div class="loader-wrapper">
                 <span class="loader"><span class="loader-inner"></span></span>
             </div>     
         </section> 
@@ -44,7 +45,7 @@ session_start();
                             <p class="sub">Apenas diga seu nome e sua idade e pronto use e abuse!</p>
                             <p class="jargao">Menos é <span class="mark">MAIS</span></p>
                                 </nav>
-                            <a href="controllers/creation.php"><input  class="button" value="Pronto" type="submit" required="required"/></a>
+                            <a href="pages/creation.php"><input  class="button" value="Pronto" type="submit" required="required"/></a>
                            
                         </div>
                         <div classs=""></div>
@@ -65,7 +66,7 @@ session_start();
                 </div>
             </section>
         </aside>
-        <section class="quadros"><h1 class="title2"><p>Entenda <strong>como funciona</strong></p></h1></section>                
+        <section class="quadros"><h1 class="title2"><p>Entenda como <strong>funciona.</strong></p></h1></section>                
             <section class="most img-fluid">
                             <div class="box-1 img-fluid">
                                     <div class="icons"><img class="img-fluid fotos2" src="_imagens/money.png"/></div>
@@ -91,8 +92,10 @@ session_start();
             </div>
         </section>
         <footer>
-        <p class="footer"> © 2020 - NOME DO TCC </p>
+        <p class="footer"> © 2020 - HARDWARE ASSEMBLY </p>
         </footer>  
+    <button onclick="backToTop()" id="btnTop"><i class="fas fa-arrow-up"></i></button>
+    <script type="text/javascript" src="_js/topo.js"></script>
     <script type="text/javascript" src="_js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="_js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="_js/script.js"></script>

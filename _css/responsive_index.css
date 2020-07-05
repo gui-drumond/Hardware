@@ -113,13 +113,13 @@
 		font-size: 16px;height: auto;
 	}
 	.jargao,.sub,.sub:hover,.sub2,.passe,.title_texto{
-		font-size: 18px;
+		font-size: 24px;
 	}
 	.mark{
 		font-size: 12px;
 	}
 	h1{
-		font-size: 14px;
+		font-size: 18px;
 	}
 	.descricao,.footer{
 		font-size: 14px;
@@ -214,7 +214,7 @@
 		padding:0;
 	}
 	.jargao,.sub,.sub:hover,.sub2,.passe,.title_texto{
-		font-size: 12px;
+		font-size: 18px;
 	}
 	a .button{
 		font-size: 8px;
@@ -247,8 +247,12 @@
 	.descricao{
 		font-size: 14px;
 	}
-	.jargao,.sub,.sub:hover,.sub2,.passe,.title_texto{
+	.jargao,.sub,.sub:hover,.sub2,.passe{
 		font-size: 12px;
+	}
+	.title_texto{
+		font-size: 18px;
+		text-align: center;
 	}
 }
 @media only screen and (max-height: 645px) {

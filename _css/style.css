@@ -6,18 +6,19 @@
 	box-sizing: border-box;
 }
 #explication{/*a section da explicao*/
+
 	display: flex;
 	padding-top: 10px;
 	margin-top: 90px;
 	background-color:#1f1f2e;
 	color: white;
-	box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.3);
-	border-bottom: .5em solid hsla(0,0%,4%,.2);
 	width: auto;
-	height: 80vh;
+	height: 12	0vh;
 	flex-wrap: wrap;
 	justify-content: center;
-	box-shadow:  2px 4px 8px rgba(0, 0, 0, 0.39);
+	padding-bottom: 10px;
+	
+
 }
 .area_texto {
 	width: 100%;
@@ -30,7 +31,7 @@
 	width: 65%;
 	height: auto;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: center;border-bottom: .5em solid hsla(0,0%,4%,.2);box-shadow:  2px 4px 8px 16px rgba(0, 0, 0, 0.39);	
 }
 #explication h1{ /*Titulo do quem somos*/
 	padding-left: 10px;
@@ -43,16 +44,18 @@
 .title_texto{
 
 	border-left: 5px solid #e02041;
+	text-indent: 2%;
 	margin-top: 10vh;
 }
 .area_texto p{/*Parte que explica quem somos*/
 	justify-items: center;
 	align-items: center;
 	text-align: justify;
-    margin-block-start: 1em;
+	text-indent: 20px;
+    margin-block-start: 2em;
     margin-block-end: 1em;
-    margin-inline-start: 0px;
-	margin-inline-end: 0px;
+    margin-inline-start: 1em;
+	margin-inline-end: 1em;
 }
 footer{
 	color: #fafafa;
@@ -149,7 +152,7 @@ margin: 0px;
 	justify-self: center;
 	justify-items: center;
 	align-self: center;
-	transition: 0.8s;
+	transition: 1s;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
 	background-color: #eee;
 	border: solid 1px #ccc;
@@ -162,13 +165,13 @@ margin: 0px;
 	grid-template-rows: 1fr;
 }
 .producao:hover{ /* A div da menu lista  */
-	transition: 1.2s;
+	transition: .8s;
 	padding: 25px;	
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
 }
 .computador:hover{ /* A div da menu computador  */
-	transition: 1.2s;
-	padding: 45px;
+	transition: .6s;
+	padding: 37px;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
 }
 .prods{/* A imagem dentro da div producao  */
@@ -343,6 +346,12 @@ transition:  1.2s;
 .fotos2{
 	margin-top: 10px;
 }
+.rodape{
+	margin-top: 1%;
+	padding-top:2%;
+	background-color:#1f1f2e;
+}
+
 @keyframes heroes {  /* animacao que faz aparecer lentamente apos a div de fakeloading  */
     0% { opacity: 0%;}
     25% { opacity: 24%;}

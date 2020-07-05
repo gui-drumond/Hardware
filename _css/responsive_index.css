@@ -106,6 +106,9 @@
 		font-size: 18px;
 		height: auto;
 	}
+	.area_texto{
+		font-size: 14px;
+	}
 	.computador,.producao :hover{
 		padding:0;
 	}
@@ -147,6 +150,9 @@
 	}
 	.computador:hover,.producao :hover{
 		padding:0;
+	}
+	.area_texto{
+		font-size: 14px;
 	}
 }
 @media only screen and (max-width: 468px) {

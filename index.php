@@ -116,7 +116,7 @@ session_start();
                                     <img class="card-img-top" src="https://scontent.fcpq3-1.fna.fbcdn.net/v/t1.0-9/s960x960/92460480_1310068155859194_2732747558546833408_o.jpg?_nc_cat=110&_nc_sid=85a577&_nc_eui2=AeFbQ2iMyQEoi0SSSGqelBD1axySlKDHKptrHJKUoMcqm0_34anYKch-B2TNXSjtSl2c3EZ2sAFMnJpy3x75nqW7&_nc_ohc=WH_YGBNo5gkAX8cJsw4&_nc_ht=scontent.fcpq3-1.fna&_nc_tp=7&oh=168327735817ed1982dd001a011fa7f0&oe=5F25358C" alt="">
                                     <div class="card-body">
                                         <h4 class="card-title text-dark">Programador do Front-End</h4>
-                                        <p class="card-text text-dark">Brayan Roberto Viva.</p>
+                                        <p class="card-text text-dark">Brayan Roberto Viva (17 anos).</p>
                                     </div>
                                     <div class="card-footer">
                                     <a><input type="button" title="Mostrar redes sociais ?" value="Ver Mais!" class=" h-100 btn btn-roxo btn-primary"/></a></div>
